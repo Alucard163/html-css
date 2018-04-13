@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сетки</title>
+    <style>
+    
+         div * {
+            background:transparent;
+          }
+          body {
+              font-family: Arial, Helvetica, sans-serif;
+              background-color: white;
+              max-width: 1920px;
+              }
+        .clearfix { 
+              vertical-align: baseline;
+          }
+        .clearfix::before {
+             display: table;
+             content: " ";
+         }
+         .clearfix::after {
+             content: " ";
+             display: table;
+         }
+         .down {
+             position: relative;
+             display: block;
+             margin: 0px auto;
+             overflow:hidden;
+             background-repeat: no-repeat;
+             background-position: center;
+         }
+         .footer {
+            position: relative;
+           	display: block;
+            padding-bottom: 0;
+            clear: both;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:rgb(146, 151, 156);
+            background-color: #3a3e64;
+          }
+          .about {
+            position: relative;	
+            display: inline-block;	
+            height: 160px;	
+            width: 100%;
+            margin-bottom: 0;
+            margin-top: 1px;
+            font-size: 0.7em;
+            background: rgba(86, 99, 164, 1);
+          }
+          .share {
+            position: absolute;
+            display: block;
+            float: left;
+            left: 50%;		
+          }
+          .footer_about {
+            font-size:1em;
+            display: block;
+            float: right;
+            width: 400px;
+            height: 150px;
+          }
+          .location {
+            position: relative;
+            float: left;
+            font-size: 1em;
+            display: block;
+            width: 400px;
+            height: 150px;	
+          }
+          .copyright {
+            position: relative;
+            font-size: 0.6em;
+            display: inline-block;	
+            width: 100%;
+            background: rgba(65, 75, 124, 1);
+          }
+          .header {
+            background-image: url(images/header-backgroudn.jpg);
+          }
+          .header-part {
+             position: fixed;
+             top:0px;
+             background-color: rgba(47, 50, 77, 1);
+             width: 1168px;
+             z-index: 10;
+          }
+          
+          .floor {
+            opacity: .75;
+          }
+          .logo-fire {
+              float: left;
+              height: auto;
+              height: 130;
+              width: 150;
+          }
+          .nav {
+              float: right;
+              vertical-align: middle;
+              color: rgba(255, 255, 255, 1);
+              text-transform: uppercase;
+              opacity: .75;
+          }
+          .nav::before {
+              content: "";
+              display:table;
+          }
+          .nav::after {
+              content: "";
+              display: table;
+              clear: both;
+          }
+          .nav ul {
+              margin: 0px;
+              padding:0px;
+              list-style: none;
+          }
+          .nav li {
+              position: relative;
+          }
+          nav li {
+              display: inline-block;
+              text-decoration: none;
+              line-height: 40px;
+          }
+         .lorem {
+             position: relative;
+             display: inline-block;
+             max-width: 1168px;
+             box-sizing: border-box;
+             width: 100%;
+             text-align: center;
+             color:aliceblue;
+             justify-content: center;
+         }
+      
+         .up {
+             position: relative;
+             margin: 0 auto;
+             padding-top: 60px;
+             width:1168px;
+             overflow: hidden;    
+         }
+
+         .upper {
+             margin-bottom: 25px;
+             margin-top:80px;
+             font-size: 2rem;
+             text-transform: uppercase;
+             font-weight: 700;
+         }
+         .icon {
+            position: relative;
+            display: block;
+            margin-top:20px;
+            padding:0 20px;
+            overflow: hidden;  
+         }
+         .icon1 {
+            float: left;
+            width: 33%;
+            padding-left: 2px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: center;
+         }
+         .image {
+                position: relative;
+                float: left;
+                margin: 0;
+                width:25%;
+         }
+         .img1 {
+             display: block;
+             margin: auto;
+             
+         }
+         .middle {
+            width:1168px;
+            margin: 0 auto;
+         }
+       
+    </style>
+    </head>
+ <body>
+     <section class="main-site">
+             <section class="header">
+                    <section class="up">
+                        <header class="header-part">
+                            <div class="content clearfix"> 
+                                <div class="header-logo">
+                                    <img class="logo-fire" src="images/logo.png" alt="logo" />
+                                </div>
+                                <nav class="nav">
+                                    <ul class="navigation">
+                                        <li> features</li>
+                                        <li> works</li>
+                                        <li> our team </li>
+                                        <li> testimonials </li>
+                                        <li> download</li>
+                                        <li> custom</li>
+                                    </ul> 
+                                </nav>
+                            </div>
+                        </header>
+       <div class="container clearfix">
+           <div class="lorem">
+            <div class="upper">
+                    <h1>Your Favorite One Page Multi Purpose Template</h1>
+            </div>
+            <div class="floor">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                 Fusce scelerisque quam in risus vehicula euismod.</p> 
+                <p>Suspendisse facilisis sodales neque, vitae interdum ante sagittis a. 
+                 Donec sed neque ligula.</p> 
+                <p>Sed eget eros et mi consequat pellentesque. Donec viverra nisl a est.</p>  
+            </div>
+           </div>
+       </div>
+       </section>
+    </section>
+       <section class="middle">
+                <div class="icon">
+                     <div class="icon1">
+                            <img class="img1" src="images/icon1.png" alt="" />
+                             <h3>Easily Customized</h3>
+                             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Nullam quis risus eget urna mollis ornare vel eu leo. 
+                            Donec ullamcorper nulla non metus auctor fringilla.</p>
+                     </div>
+                     <div class="icon1">
+                            <img class="img1" src="images/icon1.png" alt="" />
+                            <h3>Responsive ready</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. 
+                                    Nullam quis risus eget urna mollis ornare vel eu leo. 
+                                    Donec ullamcorper nulla non metus auctor fringilla.</p>
+                     </div>
+                     <div class="icon1">
+                            <img class="img1" src="images/icon1.png" alt="" />
+                            <h3>Modern design</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. 
+                                    Nullam quis risus eget urna mollis ornare vel eu leo. 
+                                    Donec ullamcorper nulla non metus auctor fringilla.</p>
+                     </div>
+                     <div class="icon1">
+                            <img class="img1" src="images/icon1.png" alt="" />
+                            <h3>Clean code</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. 
+                                    Nullam quis risus eget urna mollis ornare vel eu leo. 
+                                    Donec ullamcorper nulla non metus auctor fringilla.</p>
+                     </div>
+                     <div class="icon1">
+                            <img class="img1" src="images/icon1.png" alt="" />
+                            <h3>Ready to ship</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. 
+                                    Nullam quis risus eget urna mollis ornare vel eu leo. 
+                                    Donec ullamcorper nulla non metus auctor fringilla.</p>
+                     </div>
+                     <div class="icon1">
+                            <img class="img1" src="images/icon1.png" alt="" />
+                            <h3>Download for free</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. 
+                                    Nullam quis risus eget urna mollis ornare vel eu leo. 
+                                    Donec ullamcorper nulla non metus auctor fringilla.</p>
+                     </div>
+                </div>
+       </section>
+       <section class="down">
+                 <div class="gallery">
+                     <div class="image">
+                            <img src="images/photo1.jpg" alt="" />
+                     </div>
+                     <div class="image">
+                            <img src="images/photo1.jpg" alt="" />
+                     </div>
+                     <div class="image">
+                            <img src="images/photo1.jpg" alt="" />
+                     </div>
+                     <div class="image">
+                            <img src="images/photo1.jpg" alt="" />
+                     </div>
+                     <div class="image">
+                            <img src="images/photo1.jpg" alt="" />
+                     </div>
+                     <div class="image">
+                            <img src="images/photo1.jpg" alt="" />
+                     </div>
+                     <div class="image">
+                            <img src="images/photo1.jpg" alt="" />
+                     </div>
+                     <div class="image">
+                            <img src="images/photo1.jpg" alt="" />
+                     </div>
+                 </div>
+       </section>
+    </section>       
+  <footer class="footer">
+         <div class="about">
+				<div class="location">
+					<h3>LOCATION<h3>
+					<p>Москва Ярославль</p>
+					<p>Беверли Алтай</p>
+				</div>
+				<div class="share">
+					<h3>SHARE<h3>					
+				</div>
+				<div class="footer_about">
+					<h3>ABOUT ACTIVEBOX<h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aspernatur alias rerum fugit voluptas repudiandae quia sit repellendus voluptatum ipsam eum, delectus laborum odio illum perspiciatis libero optio. Magni, dolorum!</p>					
+				</div>
+			</div>
+			<div class="copyright">
+				<p> Copyright Lorem ipsum dolor sit </p>
+				<p>Ramet, consectetur adipisicing elit. Assumenda, quisquam!</p>
+            </div>
+		
+        </footer>
+  
+
+ </body>
+</html>

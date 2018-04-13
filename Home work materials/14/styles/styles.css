@@ -1,0 +1,212 @@
+
+@font-face {
+    font-family: 'Raleway Bold', arial;
+    src: url("http://allfont.ru/allfont.css?fonts=raleway-bold");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url("https://fonts.googleapis.com/css?family=Raleway");
+    font-weight: 700;
+    font-style: normal;
+    }
+
+div * {
+    background:transparent;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+}
+
+body {
+    background-color: white;
+    line-height: 1.5;
+    overflow-x: hidden;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 16px 0;
+    text-transform: uppercase;
+    color: #2d3033;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 20.25px;
+    color: #6c7279;
+    margin: 0;
+    padding: 0 36px;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+    text-align: inherit;
+    
+}
+
+.down {
+    position: relative;
+    display: block;
+    margin: 0px auto;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: 50% 50%;
+    list-style-position: outside;
+}
+
+.location {
+    position: relative;
+    float: left;
+    font-size: 1em;
+    display: block;
+    width: 400px;
+    height: 150px;	
+}
+
+.icon {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.icon1 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.icon-text {
+    margin-top: 28px;
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.icon-widget {
+    overflow: hidden;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 75px;
+    float: left;
+    width: 32%;
+    margin-right: 1.33%;
+    position: relative;
+    max-width: 100%;
+}
+
+.image {
+    display: block;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0;
+    width:25%;
+    height:100%;
+    margin-bottom: 0;
+    line-height: 0;
+    border-top: #fff 1px solid;
+    border-left: #fff 1px solid;
+}
+
+.img1 {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;   
+}
+
+.image img {
+    display: block;
+    margin: auto;
+    height: auto;
+}
+
+.middle {
+    padding: 120px 0 50px;
+}
+
+.sprite-icon1 {
+    background-image: url("../images/sprite1.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background-position: 0px 0px;
+}
+
+.sprite-icon2 {
+    background-image: url("../images/sprite1.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 73px;
+    height: 60px;
+    margin: auto;
+    background-position: -63px 0px;
+}
+
+.sprite-icon3 {
+    background-image: url("../images/sprite1.png");
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+    width: 41px;
+    height: 60px;
+    background-position: -139px 0px;
+}
+
+.sprite-icon4 {
+    background-image: url("../images/sprite1.png");
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+    width: 56px;
+    height: 60px;
+    background-position: -183px 0px;
+}
+
+.sprite-icon5 {
+    background-image: url("../images/sprite1.png");
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+    width: 72px;
+    height: 60px;
+    background-position: -242px 0px;
+}
+
+.sprite-icon6 {
+    background-image: url("../images/sprite1.png");
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+    width: 79px;
+    height: 60px;
+    background-position: -317px 0px;
+}
