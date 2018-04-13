@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Книжная полка</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="">
+          <h1>
+              Книжная полка 
+          </h1>
+        </div>
+      </header>
+<div class="wrapper">
+  <section class="books">
+    <table>
+      <thead>
+        <tr>
+          <th>Обложка</th>
+          <th>Автор</th>
+          <th>Описание</th>
+          <th>Год</th>
+          <th>Действия</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="book-id-1">
+          <td><img class="book-img" src="images/1.png" alt=""></td>
+          <td class="book-title">Marijn Haverbeke</td>
+          <td class="book-description">Eloquent JavaScript</td>
+          <td class=book-date>2014</td>
+          <td><button data-book-id="1" class="edit-btn">Редактировать</button><button data-book-id="1" class="remove-btn">Удалить</button></td>
+        </tr>
+        <tr id="book-id-2">
+          <td><img class="book-img" src="images/2.jpg" alt=""></td>
+          <td class="book-title">Addy Osmani</td>
+          <td class="book-description">Learning JavaScript Design Patterns</td>
+          <td class=book-date>2016</td>
+          <td><button data-book-id="2"class="edit-btn">Редактировать</button><button data-book-id="2" class="remove-btn">Удалить</button></td>
+        </tr>
+        <tr id="book-id-3">
+          <td><img class="book-img" src="images/3.jpg" alt=""></td>
+          <td class="book-title"> Eric Elliott </td>
+          <td class="book-description">Programming JavaScript Applications</td>
+          <td class=book-date>2015</td>
+          <td><button data-book-id="3" class="edit-btn">Редактировать</button><button data-book-id="3" class="remove-btn">Удалить</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <hr>
+  <section class="edit">
+    <fieldset>
+        <legend>Редактирование</legend>
+        <div id="edit-form">
+          <form action="#" method="post">
+            <input id="field-edit-id" type="hidden" value="">
+            <input id="field-title" type="text" name="" placeholder="Автор" value=""><br>
+            <textarea id="field-description" placeholder="Описание"></textarea><br>
+            <input id="field-date" type="text" name="" placeholder="Год" value=""><br>
+            <div>
+              <input type="submit" value="Сохранить"/>
+              <a href="#cancel">Отменить</a>
+            </div>
+          </form>
+        </div>
+    </fieldset>
+  </section>
+  <section class="add">
+    <fieldset>
+      <legend>Добавление книги</legend>
+      <div id="add-form">
+        <form action="#" method="post">
+          <input type="text" name="" placeholder="Автор" value=""><br>
+          <textarea placeholder="Описание"></textarea><br>
+          <div>
+            <input type="submit" value="Добавить книгу"/>
+          </div>
+        </form>
+      </div>
+    </fieldset>
+  </section>
+</div>
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script>
+
+  $(document).ready(function() {
+    "use strict";
+
+    var edit_btns = $(".edit-btn"),
+        remove_btns = $(".remove-btn");
+
+    var edit_form = $("#edit-form"),
+        add_form = $("#add-form");
+
+    edit_btns.on("click", function() {
+        let book_id = $(this).data("book-id"),
+            book_title = $("#book-id-" + book_id).find(".book-title").html(),
+            book_description = $("#book-id-" + book_id).find(".book-description").html(),
+            book_date = $("#book-id-" + book_id).find(".book-date").html();
+
+        edit_form.find("#field-edit-id").val(book_id)
+        edit_form.find("#field-title").val(book_title);
+        edit_form.find("#field-description").text(book_description);
+        edit_form.find("#field-date").val(book_date);
+    });
+
+    remove_btns.on("click", function() {
+        let book_id = $(this).data("book-id");
+        $("#book-id-" + book_id).remove();
+    });
+
+    edit_form.on("submit", function(e) {
+      e.preventDefault();
+
+      let book_id = $(this).find("#field-edit-id").val(),
+          field_title = $("#field-title").val(),
+          field_description = $("#field-description").val(),
+          field_date = $("#field-date").val();
+
+      $("#book-id-" + book_id).find(".book-title").html(field_title);
+      $("#book-id-" + book_id).find(".book-description").html(field_description);
+      $("#book-id-" + book_id).find(".book-date").html(field_date);
+    });
+
+    add_form.on("submit", function() {
+      e.preventDefault();
+    });
+  });
+
+  </script>
+
+</body>
+</html>

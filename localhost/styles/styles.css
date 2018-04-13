@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    box-sizing: border-box; 
+  }
+  
+    body {
+      font-size: 16px;
+      position: relative;
+      line-height: 1.6;
+      font-family: 'openSans',sans-serif;
+      overflow-x: hidden;
+      text-align: center;
+      background-color: #efefef;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .edit fieldset {
+        border: 2px #af3333 solid;
+    }
+
+    .add fieldset {
+        border: 2px #2eb95c solid;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .wrapper {
+        text-align: center;
+        width: 1220px;
+        background-color: #fff;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 30px;
+    }
+
+    .book-img {
+        width:200px;
+        height:200px;
+        border-radius: 20px;
+    }
+
+    .book-description, .book-title {
+        max-width: 200px;
+    }
+
+    table {
+        margin: 0 auto;
+    }
+
+    .edit-btn {
+        border-radius: 5px;
+	    background: linear-gradient(#D0ECF4, #5BC9E1, #D0ECF4);
+    }
+
+    .edit-btn:hover {
+        background: linear-gradient(#2A9AE0, #D0ECF4);
+	    border: 2px inset #f0f0f0;
+    }
+
+    .edit-btn:active {
+        background: linear-gradient(#227EB7, #D0ECF4);
+	    border: 2px inset #f0f0f0;
+    }
+
+    .remove-btn {
+        border-radius: 5px;
+	    background: linear-gradient(#D0ECF4, #5BC9E2, #D0ECF4);
+    }
+
+    .remove-btn:hover {
+        background: linear-gradient(#2A9AE1, #D0ECF4);
+	    border: 2px inset #f0f0f0;
+    }
+
+    .remove-btn:active {
+        background: linear-gradient(#227EB8, #D0ECF4);
+	    border: 2px inset #f0f0f0;
+    }
+
+
